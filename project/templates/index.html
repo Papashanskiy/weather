@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block head %}
+<style>
+    .searchRes {
+        margin-top: 20px;
+        cursor: pointer;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+<h1 class="title">
+    Hey dude
+</h1>
+<p class="subtitle">
+    Do you want to know weather in the <strong>world</strong>?
+</p>
+
+<div class="columns">
+    <div class="column">
+        <div class="columns is-multiline">
+            <div class="column is-full">
+                <form action="" id="cityForm">
+                    <div class="field">
+                        <label class="label">City:</label>
+                        <div class="control">
+                            <input id="cityName" class="input" type="text" placeholder="Moscow" required>
+                        </div>
+                        <p class="help">Press Enter to submit</p>
+                    </div>
+                </form>
+            </div>
+            <div class="column">
+                <div id="searchResult"></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="column">
+        <div class="level">
+            <div class="left">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Scripts -->
+<script type=text/javascript src="{{ url_for('static', filename='js.js') }}">
+</script>
+
+{% endblock %}
