@@ -1,18 +1,24 @@
 {% extends "base.html" %}
 
-{% block title %}Home{% endblock %}
+{% block title %}Weather for you{% endblock %}
 
 {% block head %}
 <style>
     .searchRes {
-        margin-top: 20px;
         cursor: pointer;
+        box-shadow: none;
+        border: 1px solid white;
+    }
+    .searchRes:hover {
+        box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
+        z-index: 1;
     }
 </style>
 {% endblock %}
 
 {% block content %}
 <h1 class="title">
+    <img src="{{ url_for('static', filename='favicon.png') }}" style="width: 30px;">
     Hey dude
 </h1>
 <p class="subtitle">
