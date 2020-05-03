@@ -40,14 +40,14 @@ $(document).ready(function () {
         e.preventDefault();
     });
 
-    $(document).on('input', '#cityName', function (e) {
+    /* $(document).on('input', '#cityName', function (e) {
         e.preventDefault();
 
         let name = $('#cityName').val();
 
         if (name !== '') searchCities(name);
 
-    });
+    }); */
 
     $(document).on('mousedown', '.searchRes', function () {
         $(this).animate({boxShadow: 'inset 2px 2px 2px'}, 'fast');
@@ -61,6 +61,15 @@ $(document).ready(function () {
                 $(this).css('box-shadow', '');
                 $(this).dequeue();
             });
+    });
+
+    let timeout = null;
+    $(document).on('keyup', '#cityName', function (e) {
+        clearTimeout(timeout);
+        timeout = setTimeout(function () {
+            let name = $('#cityName').val();
+            if (name !== '') searchCities(name);
+        }, 1000);
     });
 
 });
