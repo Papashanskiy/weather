@@ -8,12 +8,15 @@
         cursor: pointer;
         box-shadow: none;
         border: 1px solid white;
+        margin-bottom: 5px;
+        transition: all 0.2s ease;
     }
     .searchRes:hover {
         box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
         z-index: 1;
     }
 </style>
+<script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
 {% endblock %}
 
 {% block content %}
@@ -35,7 +38,7 @@
                         <div class="control">
                             <input id="cityName" class="input" type="text" placeholder="Moscow" required>
                         </div>
-                        <p class="help">Press Enter to submit</p>
+                        <p class="help">Choose some city from the list</p>
                     </div>
                 </form>
             </div>
