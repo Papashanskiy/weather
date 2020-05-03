@@ -6,8 +6,9 @@ $(document).ready(function () {
     }
 
     function searchCities (name) {
+        const url = '/api/get_user_info';
         $.ajax({
-            url: '/get_user_info',
+            url: url,
             type: 'POST',
             data: {name: name},
             dataType: 'json',
@@ -22,7 +23,7 @@ $(document).ready(function () {
                     // let data = out[i].toString();
                     // data = data.split(',').join(', ');
                     let data = out[i][1] + " " + out[i][2] + " " + out[i][3];
-                    $('#searchResult').append("<div class='columns'><div class='box searchRes'>" + data + "</div></div>");
+                    $('#searchResult').append("<div class='columns'><div class='box searchRes' idcity='" + out[i][0] + "'>" + data + "</div></div>");
                 }
 
                 let value = $('#cityName').val();
@@ -36,21 +37,33 @@ $(document).ready(function () {
         });
     }
 
+    function getWeatherById(id) {
+        const url = '/api/get_weather_by_id';
+        $.ajax({
+            url: url,
+            type: "POST",
+            dataType: 'json',
+            data: {id: id},
+            success: function (r) {
+                result = JSON.parse(r.result);
+                console.log(result);
+            },
+            error: function (xhr) {
+                alert(xhr.status);
+            }
+        });
+    }
+
     $(document).on('submit', '#cityForm', function (e) {
         e.preventDefault();
     });
 
-    /* $(document).on('input', '#cityName', function (e) {
-        e.preventDefault();
-
-        let name = $('#cityName').val();
-
-        if (name !== '') searchCities(name);
-
-    }); */
-
     $(document).on('mousedown', '.searchRes', function () {
         $(this).animate({boxShadow: 'inset 2px 2px 2px'}, 'fast');
+
+        // alert($(this).attr('idcity'));
+        let id = $(this).attr('idcity');
+        getWeatherById(id);
     });
 
     $(document).on('mouseup', '.searchRes', function () {
