@@ -52,24 +52,35 @@
         <div class="level">
             <div class="level-left"></div>
 
-            <!-- Loop this part for add weather box -->
             <div class="level-right">
-                <div class="level-item box">
+                <div>
+                <!-- Loop this part for add weather box -->
+                <div class="level-item">
                     <div class="columns">
                         <div class="column" style="text-align: center;">
-                            <img src="http://openweathermap.org/img/wn/09d@2x.png" style="width: 300px;"/>
-                            <p>Clear sky</p>    <!-- needs upper first letter -->
+                            <img src="http://openweathermap.org/img/wn/09d@2x.png" style="width: 265px; top: -25px; position: relative;"/>
+                            <p style="top: -45px; position: relative;">Clear sky</p>    <!-- needs upper first letter -->
                         </div>
                         <div class="column" style="text-align: center; font-size: 20px;">
-                            <p>T: 14.55 &#8451;</p>
-                            <p>F: 12.21 &#8451;</p>
-                            <p>m: 10.21 &#8451;</p>
-                            <p>M: 15 &#8451;</p>
+                            <p style="font-size: 30px">14.55 &#8451;</p>
+                            <p class="help">Feels like 12.21 &#8451;</p>
+                            <p style="margin-top: 20px; font-size: 15px;">
+                                <img src="{{ url_for('static', filename='wind.png') }}" style="width: 25px">
+                                2 km/h 107&#176;
+                            </p>
                         </div>
-                        <div class="column">wind</div>
+                        <div class="column">
+                            <p style="color: orange;">17</p>
+                            <p style="color: dodgerblue">10</p>
+                        </div>
                     </div>
                 </div>
+                <!-- End loop -->
+                </div>
+
             </div>
+
+
         </div>
     </div>
 </div>
