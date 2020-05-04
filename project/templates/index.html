@@ -34,7 +34,7 @@
             <div class="column is-full">
                 <form action="" id="cityForm">
                     <div class="field">
-                        <label class="label">City:</label>
+                        <label class="label" for="cityName">City:</label>
                         <div class="control">
                             <input id="cityName" class="input" type="text" placeholder="Moscow" required>
                         </div>
@@ -50,8 +50,25 @@
     </div>
     <div class="column">
         <div class="level">
-            <div class="left">
+            <div class="level-left"></div>
 
+            <!-- Loop this part for add weather box -->
+            <div class="level-right">
+                <div class="level-item box">
+                    <div class="columns">
+                        <div class="column" style="text-align: center;">
+                            <img src="http://openweathermap.org/img/wn/09d@2x.png" style="width: 300px;"/>
+                            <p>Clear sky</p>    <!-- needs upper first letter -->
+                        </div>
+                        <div class="column" style="text-align: center; font-size: 20px;">
+                            <p>T: 14.55 &#8451;</p>
+                            <p>F: 12.21 &#8451;</p>
+                            <p>m: 10.21 &#8451;</p>
+                            <p>M: 15 &#8451;</p>
+                        </div>
+                        <div class="column">wind</div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
