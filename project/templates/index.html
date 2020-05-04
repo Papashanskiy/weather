@@ -3,6 +3,22 @@
 {% block title %}Weather for you{% endblock %}
 
 {% block head %}
+<style>
+    .searchRes {
+        cursor: pointer;
+        box-shadow: none;
+        border: 1px solid white;
+        margin-bottom: 5px;
+        transition: all 0.2s ease;
+    }
+    .searchRes:hover {
+        box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
+        z-index: 1;
+    }
+    .container {
+        padding-top: 20px;
+    }
+</style>
 <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
 {% endblock %}
 

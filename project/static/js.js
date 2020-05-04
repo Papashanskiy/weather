@@ -37,6 +37,10 @@ $(document).ready(function () {
         });
     }
 
+    function addToWeatherList(city, country, iconId, descript, temp, feels, min, max, windSpeed, windDeg) {
+        return true;
+    }
+
     function getWeatherById(id) {
         const url = '/api/get_weather_by_id';
         $.ajax({
@@ -47,6 +51,12 @@ $(document).ready(function () {
             success: function (r) {
                 result = JSON.parse(r.result);
                 console.log(result);
+                addToWeatherList(
+                    city=result.name, country=result.sys.country, iconId=result.weather[0].icon,
+                    descript=result.weather[0].description, temp=result.main.temp, feels=result.main.feels_like,
+                    min=result.main.temp_min, max=result.main.temp_max, windSpeed=result.wind.speed,
+                    windDeg=result.wind.deg
+                    )
             },
             error: function (xhr) {
                 alert(xhr.status);
@@ -61,7 +71,6 @@ $(document).ready(function () {
     $(document).on('mousedown', '.searchRes', function () {
         $(this).animate({boxShadow: 'inset 2px 2px 2px'}, 'fast');
 
-        // alert($(this).attr('idcity'));
         let id = $(this).attr('idcity');
         getWeatherById(id);
     });
@@ -83,6 +92,12 @@ $(document).ready(function () {
             let name = $('#cityName').val();
             if (name !== '') searchCities(name);
         }, 1000);
+    });
+
+    $('html').bind('keypress', function(e) {
+       if(e.keyCode == 13) {
+          return false;
+       }
     });
 
 });
