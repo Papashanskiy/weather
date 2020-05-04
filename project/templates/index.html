@@ -3,19 +3,6 @@
 {% block title %}Weather for you{% endblock %}
 
 {% block head %}
-<style>
-    .searchRes {
-        cursor: pointer;
-        box-shadow: none;
-        border: 1px solid white;
-        margin-bottom: 5px;
-        transition: all 0.2s ease;
-    }
-    .searchRes:hover {
-        box-shadow: 0 .5em 1em -.125em rgba(10,10,10,.1),0 0 0 1px rgba(10,10,10,.02);
-        z-index: 1;
-    }
-</style>
 <script src="//cdn.jsdelivr.net/jquery.shadow-animation/1/mainfile"></script>
 {% endblock %}
 
@@ -29,7 +16,7 @@
 </p>
 
 <div class="columns">
-    <div class="column">
+    <div class="column is-two-fifths">
         <div class="columns is-multiline">
             <div class="column is-full">
                 <form action="" id="cityForm">
@@ -48,40 +35,34 @@
         </div>
 
     </div>
-    <div class="column">
-        <div class="level">
-            <div class="level-left"></div>
-
-            <div class="level-right">
-                <div>
-                <!-- Loop this part for add weather box -->
-                <div class="level-item">
-                    <div class="columns">
-                        <div class="column" style="text-align: center;">
-                            <img src="http://openweathermap.org/img/wn/09d@2x.png" style="width: 265px; top: -25px; position: relative;"/>
-                            <p style="top: -45px; position: relative;">Clear sky</p>    <!-- needs upper first letter -->
-                        </div>
-                        <div class="column" style="text-align: center; font-size: 20px;">
-                            <p style="font-size: 30px">14.55 &#8451;</p>
-                            <p class="help">Feels like 12.21 &#8451;</p>
-                            <p style="margin-top: 20px; font-size: 15px;">
-                                <img src="{{ url_for('static', filename='wind.png') }}" style="width: 25px">
-                                2 km/h 107&#176;
-                            </p>
-                        </div>
-                        <div class="column">
-                            <p style="color: orange;">17</p>
-                            <p style="color: dodgerblue">10</p>
-                        </div>
+    <div class="column" style="margin-left: 30vh;">
+        <!-- Loop this part for add weather box -->
+        <div class="columns is-multiline">
+            <div class="column is-full">
+                <div class="columns is-full" style="width: 450px;">
+                    <div class="column" style="text-align: center;">
+                        <img src="http://openweathermap.org/img/wn/09d@2x.png" style="width: 133px; top: -25px; position: relative;"/>
+                        <p style="top: -45px; position: relative;">Clear sky</p>    <!-- needs upper first letter -->
+                    </div>
+                    <div class="column" style="text-align: center; font-size: 20px;">
+                        <p style="font-size: 30px">14.55 &#8451;</p>
+                        <p class="help">Feels like 12.21 &#8451;</p>
+                        <p style="margin-top: 20px; font-size: 15px;">
+                            <img src="{{ url_for('static', filename='wind.png') }}" style="width: 25px">
+                            2 km/h 107&#176;
+                        </p>
+                    </div>
+                    <div class="column">
+                        <p style="color: orange;">17</p>
+                        <p style="color: dodgerblue">10</p>
                     </div>
                 </div>
-                <!-- End loop -->
-                </div>
-
             </div>
-
-
+            <div class="column if-full">
+                <p style="font-size: 30px; position: relative; top: -40px; left: 30px;">Odessa UA</p>
+            </div>
         </div>
+        <!-- End loop -->
     </div>
 </div>
 
