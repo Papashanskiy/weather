@@ -1,0 +1,56 @@
+2020-05-04 00:07:34,888 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/May/2020 00:07:34] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-04 00:07:34,960 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/May/2020 00:07:34] "[37mGET /static/js.js HTTP/1.1[0m" 200 -
+2020-05-04 00:07:35,176 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/May/2020 00:07:35] "[37mGET /static/favicon.png HTTP/1.1[0m" 200 -
+2020-05-04 00:07:35,512 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/May/2020 00:07:35] "[37mGET /static/favicon.png HTTP/1.1[0m" 200 -
+2020-05-04 00:07:40,745 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/May/2020 00:07:40] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:07:41,231 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/May/2020 00:07:41] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:07:41,262 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/May/2020 00:07:41] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:08:32,873 INFO werkzeug MainThread :  * Detected change in '/home/papashanskiy/PycharmProjects/blogblog/weather/project/weather/get_city.py', reloading
+2020-05-04 00:08:58,365 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/May/2020 00:08:58] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:08:58,440 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/May/2020 00:08:58] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:08:58,465 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/May/2020 00:08:58] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:10:46,733 INFO werkzeug MainThread :  * Detected change in '/home/papashanskiy/PycharmProjects/blogblog/weather/project/__init__.py', reloading
+2020-05-04 00:12:07,550 INFO werkzeug Thread-3 : 127.0.0.1 - - [04/May/2020 00:12:07] "[35m[1mPOST /get_user_info HTTP/1.1[0m" 500 -
+2020-05-04 00:12:21,246 INFO werkzeug Thread-4 : 127.0.0.1 - - [04/May/2020 00:12:21] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:22,219 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/May/2020 00:12:22] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:25,121 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/May/2020 00:12:25] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:25,182 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/May/2020 00:12:25] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:28,000 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/May/2020 00:12:28] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:30,112 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/May/2020 00:12:30] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:30,462 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/May/2020 00:12:30] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:30,550 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/May/2020 00:12:30] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:34,637 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/May/2020 00:12:34] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:39,884 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/May/2020 00:12:39] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:42,243 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/May/2020 00:12:42] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:45,108 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/May/2020 00:12:45] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:45,442 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/May/2020 00:12:45] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:12:52,281 INFO werkzeug Thread-5 : 127.0.0.1 - - [04/May/2020 00:12:52] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-04 00:12:52,412 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/May/2020 00:12:52] "[37mGET /static/js.js HTTP/1.1[0m" 200 -
+2020-05-04 00:12:53,526 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/May/2020 00:12:53] "[37mGET /static/favicon.png HTTP/1.1[0m" 200 -
+2020-05-04 00:12:54,757 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/May/2020 00:12:54] "[37mGET /static/favicon.png HTTP/1.1[0m" 200 -
+2020-05-04 00:13:04,682 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/May/2020 00:13:04] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:04,732 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/May/2020 00:13:04] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:04,921 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/May/2020 00:13:04] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:04,975 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/May/2020 00:13:04] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:05,064 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/May/2020 00:13:05] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:05,066 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/May/2020 00:13:05] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:08,105 INFO werkzeug MainThread :  * Detected change in '/home/papashanskiy/PycharmProjects/blogblog/weather/project/__init__.py', reloading
+2020-05-04 00:13:08,537 INFO werkzeug MainThread :  * Restarting with stat
+2020-05-04 00:13:09,108 INFO werkzeug Thread-6 : 127.0.0.1 - - [04/May/2020 00:13:09] "[37mGET / HTTP/1.1[0m" 200 -
+2020-05-04 00:13:09,182 INFO werkzeug Thread-7 : 127.0.0.1 - - [04/May/2020 00:13:09] "[37mGET /static/js.js HTTP/1.1[0m" 200 -
+2020-05-04 00:13:10,313 INFO werkzeug Thread-8 : 127.0.0.1 - - [04/May/2020 00:13:10] "[37mGET /static/favicon.png HTTP/1.1[0m" 200 -
+2020-05-04 00:13:11,497 INFO werkzeug Thread-9 : 127.0.0.1 - - [04/May/2020 00:13:11] "[37mGET /static/favicon.png HTTP/1.1[0m" 200 -
+2020-05-04 00:13:20,976 INFO werkzeug Thread-10 : 127.0.0.1 - - [04/May/2020 00:13:20] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:21,601 INFO werkzeug Thread-11 : 127.0.0.1 - - [04/May/2020 00:13:21] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:21,635 INFO werkzeug Thread-13 : 127.0.0.1 - - [04/May/2020 00:13:21] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:21,644 INFO werkzeug Thread-14 : 127.0.0.1 - - [04/May/2020 00:13:21] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:21,823 INFO werkzeug Thread-12 : 127.0.0.1 - - [04/May/2020 00:13:21] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:21,827 INFO werkzeug Thread-15 : 127.0.0.1 - - [04/May/2020 00:13:21] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:37,993 INFO werkzeug Thread-20 : 127.0.0.1 - - [04/May/2020 00:13:37] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:38,136 INFO werkzeug Thread-16 : 127.0.0.1 - - [04/May/2020 00:13:38] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:38,278 INFO werkzeug Thread-21 : 127.0.0.1 - - [04/May/2020 00:13:38] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:38,323 INFO werkzeug Thread-17 : 127.0.0.1 - - [04/May/2020 00:13:38] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:38,331 INFO werkzeug Thread-18 : 127.0.0.1 - - [04/May/2020 00:13:38] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:13:38,345 INFO werkzeug Thread-19 : 127.0.0.1 - - [04/May/2020 00:13:38] "[37mPOST /get_user_info HTTP/1.1[0m" 200 -
+2020-05-04 00:14:27,917 INFO werkzeug MainThread :  * Detected change in '/home/papashanskiy/PycharmProjects/blogblog/weather/project/__init__.py', reloading
+2020-05-04 00:14:28,403 INFO werkzeug MainThread :  * Restarting with stat
