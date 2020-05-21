@@ -1,12 +1,24 @@
 from flask import Flask, request, make_response, jsonify, abort, render_template
 import os
 from .weather import get_city, get_weather
+from flask_sqlalchemy import SQLAlchemy
 
 BASE_DIR = os.path.abspath(os.path.dirname(__file__))
 
 app = Flask(__name__)
+db = SQLAlchemy(app)
 app.config['STATIC_FOLDER'] = os.path.join(BASE_DIR, 'static')
 app.config['API_KEY'] = '319322ebe6dc1c639977d9acf0c11a60'
+app.config.from_object("project.config.Config")
+
+
+class Cities(db.Model):
+    __tablename__ = "cities"
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(256), nullable=False)
+    state = db.Column(db.String(2))
+    country = db.Column(db.String(2))
 
 
 @app.route('/', methods=['GET'])

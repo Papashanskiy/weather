@@ -11,3 +11,14 @@ services:
     - 5000:5000
     env_file:
       - ./.env.dev
+  db:
+    image: postgres:12-alpine
+    volumes:
+    - postgres_data:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=weather_user
+      - POSTGRES_PASSWORD=weather_user
+      - POSTGRES_DB=weather_db
+
+volumes:
+  postgres_data:
